@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark mb-3"
+     style="background: linear-gradient(120deg, #Add8e6 30% , #4b7ca6 60% );">
+    <div class="container">
+
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <i class="bi bi-bar-chart-line"></i>
+            <span class="navbar-brand mb-0 h1">&nbsp; Refugee Data Visualization</span>
+        </a>
+       
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+           
+         {% include 'partials/menu.html' %}
+        
+    </div>
+</nav>
