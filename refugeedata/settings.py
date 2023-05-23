@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$t-kt*e8#em-(6f@2tnc4_%hvpoqqui5fh-ifd=60b9vs1^5x!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['immense-citadel-49124.herokuapp.com']
+ALLOWED_HOSTS = ['immense-citadel-49124.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -122,7 +122,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'd3practice/static'),
+    os.path.join(BASE_DIR, 'static'),
     # Add any additional directories here
 ]
 
