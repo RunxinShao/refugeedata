@@ -1,11 +1,19 @@
 {% extends 'base_content.html' %}
 {% block content %}
+<div style="display: flex; justify-content: center; align-items: center; ">
+  <span>The number of refugees in each continent in 2020, with darker colors indicating a higher number of refugees.</span>
+</div>
 
 
   <svg style="margin:0 auto;width: 100%; height: 100%;"id="map" width = "960" height="400"></svg>
+    <svg style="display:inline-block; vertical-align:top;" width="700" height="500" id="chart1"></svg>
+    <svg style="display:inline-block; vertical-align:top;" width="700" height="500" id="chart2"></svg>
+    <br><br>
+    <span>The dataset was obtained from the United Nations</span>
+    <span>link: https://www.un.org/development/desa/pd/content/international-migrant-stock</span>
+    <br><br>
+    <span>The racing bar chart inspired from the data visualization course at Tsinghua University. </span>
+    <br><br>
 
-
-<svg style="display:inline-block; vertical-align:top;" width="700" height="500" id="chart1"></svg>
-<svg style="display:inline-block; vertical-align:top;" width="700" height="500" id="chart2"></svg>
 
 {% endblock %}

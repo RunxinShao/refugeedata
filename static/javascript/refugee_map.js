@@ -15,8 +15,8 @@ const renderMap = (data,mapData) => {
 
   const g = svg3.append('g')
       .attr('transform', `translate(${margin3.left}, ${margin3.top})`);
-  const projection = d3.geoNaturalEarth1()
-      ;
+
+  const projection = d3.geoNaturalEarth1();
 
   const path = d3.geoPath()
       .projection(projection);
